@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Javascript Calendar</title>
+    <link href="styles.css" rel="stylesheet">
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+  
+    <div id="calPeriod">
+      <select id="allMonth"></select>
+      <input type="number" id="Year">
+    </div>
+
+    
+    <div id="calWrap"></div>
+
+    <dialog id="calForm"></dialog>
+    
+
+
+    <input type="number" id="myInput1" onchange="myChangeFunction(this)"  placeholder="enter only year"  />
+    <button id="btn" onclick="myChangeFunction()">enter</button>
+
+
+<script type="text/javascript">
+  // function myChangeFunction(input1) {
+  //   var input2 = document.getElementById('Year');
+  //   input2.value = input1.value;
+  // }
+</script>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  padding: 0; margin: 0;
+  overflow-x: hidden;
+}
+:root {
+   --bg-color-a: #3b39af; 
+  --bg-color-b: #404040;
+  --bg-color-c: #d73a3a; 
+}
+
+ 
+
+
+#calPeriod {
+  padding: 15px;
+  background: var(--bg-color-a);
+}
+#calPeriod input, #calPeriod select {
+  font-size: 24px;
+  border: 0; outline: none;
+  color: #fff; background: 0;
+  cursor: pointer;
+}
+#calPeriod option { color: #000; }
+#Year {
+  width: 100px;
+  margin-left: 10px;
+}
+
+
+.calHead, .calRow { display: flex; }
+.calCell { 
+  
+
+  width: 14.2857%; 
+  
+}
+
+
+.calHead .calCell {
+  color: #fff; background: var(--bg-color-b);
+  font-weight: 700; text-align: center;
+  padding: 15px 0;
+  border: #000;
+}
+
+
+.calBlank { 
+  background: rgb(240, 220, 220); 
+}
+.calToday
+ {
+   background: #feffd3;
+   }
+.calToday .cellDate
+ {
+   color: #f5dcdc;
+   }
+.calBody .calCell 
+{
+  border: 1px solid #161515;
+  min-height: 80px;
+}
+
+
+.calCell:hover, .calBlank:hover{
+  background-color: #36f70f;
+  border: #000;
+}
+.calCell{
+  border-color: #000;
+
+}
+.calWrap{
+  position: relative;
+/* position: absolute; */
+  width: 5px;
+}
+#btn{
+  background-color: #3b39af;
+  height: 50px;
+  width: 10%;
+}
+#myInput1{
+  width: 20%;
+  height: 50px;
+}
+:placeholder-shown
+{
+  font-size: large;
+}
